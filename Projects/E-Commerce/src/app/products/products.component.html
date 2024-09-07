@@ -1,0 +1,36 @@
+<div class="product-header" style="font-weight: bold;">
+    <a href="#" onclick="return false">OUR VEGETABLES</a>
+</div>
+<div class="container">
+    <div class="row mb-2">
+        <div class="col-md-4" *ngFor="let product of vegetables">
+            <div class="card" style="width: 18rem;">
+                <img [src]="product.image" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.title }}</h5>
+                    <p class="card-text">{{ product.description }}</p>
+                    <p class="card-price">₹ {{ product.price }}</p>
+                    <button class="btn btn-primary" (click)="addToCart(product)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="product-header" style="font-weight: bold;">
+    <a href="#" onclick="return false">OUR FRUITS</a>
+</div>
+<div class="container">
+    <div class="row mb-2">
+        <div class="col-md-4" *ngFor="let product of fruits">
+            <div class="card" style="width: 18rem;">
+                <img [src]="product.image" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.title }}</h5>
+                    <p class="card-text">{{ product.description }}</p>
+                    <p class="card-price">₹ {{ product.price }}</p>
+                    <button class="btn btn-primary" (click)="addToCart(product)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+.payment-page {
+    margin-top: 10px;
+}
+
+.payment-page h2 {
+    color: #4caf50;
+    animation: textAnimation 2s infinite;
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+}
+
+.shipping-details-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shipping-details-card h4 {
+    margin-bottom: 20px;
+}
+
+.shipping-details-card p {
+    margin-bottom: 10px;
+}
+
+.shipping-name {
+    text-align: center;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.bordered-image {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 1px;
+}
+.form-check p{
+    font-weight: bold;
+}

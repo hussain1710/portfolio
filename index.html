@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Personal Portfolio</title>
+    <style>
+        /* Custom CSS for better responsiveness */
+        .home {
+            padding-top: 5rem;
+            /* Offset for fixed navbar */
+        }
+
+        .portfolio-image {
+            height: auto;
+            /* Allow the image height to adjust automatically */
+            width: 100%;
+            /* Set the width to 100% to maintain responsiveness */
+            object-fit: cover;
+        }
+
+        .property-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 767.98px) {
+            .home-text {
+                text-align: center;
+            }
+
+            .home-img {
+                margin-top: 2rem;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+
+            .home-text h1 {
+                font-size: 2rem;
+            }
+
+            .home-text h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <!-- navbar section starts-->
+    <nav class="navbar navbar-light fixed-top bg-light shadow-sm">
+        <div class="container-lg">
+            <a class="navbar-brand text-danger fw-bold fs-4" href="#">My Portfolio</a>
+            <div class="dropdown">
+                <button class="btn btn-secondary btn-danger" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="true">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#home">Home</a></li>
+                    <li><a class="dropdown-item" href="#about">About</a></li>
+                    <li><a class="dropdown-item" href="#services">Services</a></li>
+                    <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar section ends-->
+
+    <!-- home section starts-->
+    <section class="home py-5" id="home">
+        <div class="container-lg">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <div class="home-img text-center">
+                        <img src="formals.jpg" class=" rounded-circle mw-100" height="420" width="380"
+                            alt="profile img">
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+                    <div class="home-text">
+                        <br><br>
+                        <p class="text-muted mb-1 fs-4">Hello, My name is</p>
+                        <h1 class="text-danger text-uppercase fs-1 fw-bold">HUSSAIN ANDHERIWALA</h1>
+                        <h2 class="fs-3 fw-bold"> and I am a Full Stack Developer</h2>
+                        <!-- <p class="mt-4 text-muted">
+                            </p> -->
+                        <a href="#portfolio" class="btn btn-danger mt-3 px-3">My Work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home section ends-->
+
+    <!-- about section starts-->
+    <section class="about bg-muted py-2" id="about">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section-title text-center ">
+                        <h2 class="fw-bold mb-5 fs-1">About Me</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="about-text">
+                        <h3 class="fs-4 mb-3">I am a Bachelor of Computer Applications (BCA) graduate with extensive
+                            training and certifications in the IT field.</h3>
+                        <p class="text-muted"> As a dedicated full stack developer, I
+                            specialize in .NET and have robust experience with various databases. My technical skills,
+                            combined with my passion for continuous learning, enable me to create efficient, scalable,
+                            and user-friendly applications. I am always eager to take on new challenges and leverage my
+                            expertise to deliver innovative solutions.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 d-flex align-items-center">
+                            <a href="HussainResume.pdf" class="btn btn-danger px-3 me-5"
+                                download="HussainResume.pdf">Download CV</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5 mt-md-0">
+                    <div class="skill-item px-5 ">
+                        <h3 class="fs-2 text-muted">LANGUAGES</h3>
+                        <ul>
+                            <li class="text-danger fw-bold my-1 fs-5">HTML</li>
+                            <li class="text-danger fw-bold my-1 fs-5">CSS</li>
+                            <li class="text-danger fw-bold my-1 fs-5">Javascript</li>
+                            <li class="text-danger fw-bold my-1 fs-5">Bootstrap</li>
+                            <li class="text-danger fw-bold my-1 fs-5">Angular</li>
+                            <li class="text-danger fw-bold my-1 fs-5">Ajax</li>
+                            <li class="text-danger fw-bold my-1 fs-5">JQuery</li>
+                            <li class="text-danger fw-bold my-1 fs-5">C#</li>
+                            <li class="text-danger fw-bold my-1 fs-5">.Net Core</li>
+                            <li class="text-danger fw-bold my-1 fs-5">ASP .Net</li>
+                            <li class="text-danger fw-bold my-1 fs-5">MVC</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-4 mt-5 mt-md-0">
+                    <div class="skill-item mb-4 px-5">
+                        <h3 class="fs-2 text-muted">DATABASE</h3>
+                        <ul>
+                            <li class="text-danger fw-bold my-1 fs-5">MySQL</li>
+                            <li class="text-danger fw-bold my-1 fs-5">PL SQL</li>
+                            <li class="text-danger fw-bold my-1 fs-5">Microsoft SQL Server</li>
+                            <li class="text-danger fw-bold my-1 fs-5">Postgres SQL</li>
+                            <li class="text-danger fw-bold my-1 fs-5">Oracle Database</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section ends-->
+    <!-- Service Section Starts -->
+    <section class="services  py-2" id="services">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section-title text-center ">
+                        <h2 class="fw-bold mb-5 fs-1">What I Do</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                        <div class="icon my-3 text-danger fs-1">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="fs-5 py-2">Web Developement</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt
+                            ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                        <div class="icon my-3 text-danger fs-1">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="fs-5 py-2">Creative Design</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt
+                            ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                        <div class="icon my-3 text-danger fs-1">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="fs-5 py-2">Database Administrator</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt
+                            ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service section ends-->
+
+    <!-- Portfolio Section Starts -->
+    <section class="portfolio py-3" id="portfolio">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5">My Work</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="portfolio-item text-center">
+                        <img src="logo.png" class="property-img portfolio-image border border-dark" alt="Project Image">
+                        <div class="portfolio-info">
+                            <h3 class="text-center fs-5 my-2 text-danger fw-bold">E-Commerce Website</h3>
+                            <p class="text-center text-muted"></p>
+                            <a href="https://hussain1710.github.io/e-commerce/" target="_blank">
+                                <p class="btn btn-danger mt-1 px-3">View Project</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item text-center">
+                        <img src="curepoint.png" class="property-img portfolio-image border border-dark"
+                            alt="Project Image">
+                        <div class="portfolio-info">
+                            <h3 class="text-center fs-5 my-2 text-danger fw-bold">Clinic Website</h3>
+                            <p class="text-center text-muted"></p>
+                            <a href="" target="_blank">
+                                <p class="btn btn-danger mt-1 px-3">View Project</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item text-center">
+                        <img src="juice.JPG" class="property-img portfolio-image border border-dark"
+                            alt="Project Image">
+                        <div class="portfolio-info">
+                            <h3 class="text-center fs-5 my-2 text-danger fw-bold">Juice Advertisement</h3>
+                            <p class="text-center text-muted">
+                            </p>
+                            <a href=" https://hussain1710.github.io/projects/" target="_blank">
+                                <p class="btn btn-danger mt-1 px-3">View Project</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item text-center">
+                        <img src="makaan.png" class="property-img portfolio-image border border-dark"
+                            alt="Project Image">
+                        <div class="portfolio-info">
+                            <h3 class="text-center fs-5 my-2 text-danger fw-bold">Real Estate Website</h3>
+                            <p class="text-center text-muted"></p>
+                            <a href="" target="_blank">
+                                <p class="btn btn-danger mt-1 px-3">View Project</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item text-center">
+                        <img src="WW.png" class="property-img portfolio-image border border-dark" alt="Project Image">
+                        <div class="portfolio-info">
+                            <h3 class="text-center fs-5 my-2 text-danger fw-bold">Travel Agency Website</h3>
+                            <p class="text-center text-muted"></p>
+                            <a href="https://hussain1710.github.io/wanderwise/" target="_blank">
+                                <p class="btn btn-danger mt-1 px-3">View Project</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item text-center">
+                        <img src="musclemania.png" class="property-img portfolio-image border border-dark"
+                            alt="Project Image">
+                        <div class="portfolio-info">
+                            <h3 class="text-center fs-5 my-2 text-danger fw-bold">GYM Website</h3>
+                            <p class="text-center text-muted"></p>
+                            <a href="" target="_blank">
+                                <p class="btn btn-danger mt-1 px-3">View Project</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item text-center">
+                        <img src="bookmybus.png" class="property-img portfolio-image border border-dark"
+                            alt="Project Image">
+                        <div class="portfolio-info">
+                            <h3 class="text-center fs-5 my-2 text-danger fw-bold">Online Bus Booking Website</h3>
+                            <p class="text-center text-muted"></p>
+                            <a href="" target="_blank">
+                                <p class="btn btn-danger mt-1 px-3">View Project</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item text-center">
+                        <img src="procare.png" class="property-img portfolio-image border border-dark"
+                            alt="Project Image">
+                        <div class="portfolio-info">
+                            <h3 class="text-center fs-5 my-2 text-danger fw-bold">Car Service Website</h3>
+                            <p class="text-center text-muted"></p>
+                            <a href="" target="_blank">
+                                <p class="btn btn-danger mt-1 px-3">View Project</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item text-center">
+                        <img src="littlelearners.png" class="property-img portfolio-image border border-dark"
+                            alt="Project Image">
+                        <div class="portfolio-info">
+                            <h3 class="text-center fs-5 my-2 text-danger fw-bold">Kindergarten Website</h3>
+                            <p class="text-center text-muted"></p>
+                            <a href="" target="_blank">
+                                <p class="btn btn-danger mt-1 px-3">View Project</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section Ends -->
+    <!-- Freelancer Available Section Starts -->
+    <section class="freelancer-available py-5 bg-danger">
+        <div class="conatiner-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p class="text-light fs-5">Do you have any Project?</p>
+                    <h2 class="fs-1 text-white mb-4">I'm Available for Freelancer Projects</h2>
+                    <a href="#contact" class="btn btn-outline-light">Hire Me</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Freelancer Available Section Ends -->
+
+
+    <!-- Contact Section Starts -->
+    <section class="contact py-5" id="contact">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5">Get in Touch</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5">Email</h3>
+                            <p class="text-muted">andheriwalahussain8890@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5">Phone</h3>
+                            <p class="text-muted">+91 8890707049</p>
+                        </div>
+                    </div>
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5">LinkedIn</h3>
+                            <p class="text-muted">
+                                <a href="https://www.linkedin.com/in/hussain-andheri-80744324a" target="_blank"
+                                    class="text-muted">
+                                    linkedin.com/in/hussain-andheri-80744324a
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section Ends -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.about-header {
+    background: url('..//..//assets/formtest1.png') no-repeat center center;
+    background-size: cover;
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .about-header h1 {
+    font-size: 3em;
+  }
+
+  .about-header p {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+
+  .about-content {
+    padding: 50px 0;
+  }
+
+  .team-member {
+    margin-bottom: 30px;
+  }
+
+  .team-member img {
+    border-radius: 50%;
+  }

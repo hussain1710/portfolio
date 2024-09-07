@@ -1,0 +1,43 @@
+.custom-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.item-price {
+    color: red;
+    font-weight: bold;
+}
+
+.bordered-image {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 1px;
+}
+
+.checkout-page {
+    margin-top: 20px;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+.checkout-page h2 {
+    font-size: 3em;
+    color: black;
+    animation: textAnimation 2s infinite;
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+}

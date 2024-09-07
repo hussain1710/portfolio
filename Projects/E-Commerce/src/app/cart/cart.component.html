@@ -1,0 +1,39 @@
+<div class="container cart-page">
+    <h2 class="text-center mb-4">Your Cart</h2>
+    <div class="cart-items">
+        <div class="cart-item" *ngFor="let item of cartItems">
+            <div class="row">
+                <div class="col-md-3">
+                    <img [src]="item.image" alt="Item Image" class="img-fluid bordered-image">
+                </div>
+                <div class="col-md-6">
+                    <h5 class="item-title">{{ item.name }}</h5>
+                    <p class="item-description">{{ item.description }}</p>
+                </div>
+                <div class="col-md-3 text-end">
+                    <div class="quantity">
+                        <button class="btn btn-outline-secondary btn-sm" (click)="decreaseQuantity(item)">-</button>
+                        <span class="quantity-value">{{ item.quantity || 1 }}</span>
+                        <button class="btn btn-outline-secondary btn-sm" (click)="increaseQuantity(item)">+</button>
+                    </div>
+                    <p class="item-price">₹ {{ item.price * (item.quantity || 1) }}</p>
+                    <button class="btn btn-danger btn-sm" (click)="removeItem(item)">Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-summary">
+        <div class="row">
+            <div class="col-md-8">
+                <button class="btn btn-outline-secondary btn-lg" (click)="continueShopping()"
+                    style="border-color: black; color: black;">Continue Shopping</button>
+            </div>
+            <div class="col-md-4 text-end">
+                <h4>Total: ₹ {{ totalPrice }}</h4>
+                <button class="btn btn-custom-blue btn-lg" [routerLink]="['/checkout']">
+                    Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
